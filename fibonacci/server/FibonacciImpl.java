@@ -2,6 +2,7 @@ package fibonacci.server;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+
 public class FibonacciImpl extends UnicastRemoteObject implements Fibonacci{
     protected FibonacciImpl() throws RemoteException {
         super();

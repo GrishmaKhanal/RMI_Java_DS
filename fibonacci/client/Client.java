@@ -11,6 +11,7 @@ public class Client {
             System.out.print("Enter a n for Fibonacci(n): ");
             int n = scanner.nextInt();
             System.out.println("Fibonacci("+ n +"): " + fibonacci.fib(n));
+            scanner.close();
         } catch(Exception e){
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();

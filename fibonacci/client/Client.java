@@ -1,6 +1,7 @@
 package fibonacci.client;
 import java.rmi.Naming;
 
+import fibonacci.server.Fibonacci;
 public class Client {
     public static void main(String[] args){
         try{
@@ -10,6 +11,7 @@ public class Client {
             System.out.println("Fibonacci(15): " + fibonacci.fib(15));
         } catch(Exception e){
             System.err.println("Client exception: " + e.toString());
+            e.printStackTrace();
         }
     }
 }

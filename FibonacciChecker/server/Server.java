@@ -9,7 +9,7 @@ public class Server {
             FibonacciChecker fibonacci = new FibonacciCheckerImpl();
             LocateRegistry.createRegistry(1099);
             Naming.rebind("FibonacciService", fibonacci);
-            System.out.println("Server started...");
+            System.out.println("\nServer started...");
         } catch(Exception e){
             System.err.println("Server exception: " + e.toString());
         }
